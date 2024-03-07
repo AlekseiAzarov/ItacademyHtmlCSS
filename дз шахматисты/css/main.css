@@ -1,0 +1,62 @@
+.name{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0px;
+   
+    
+}
+
+.birth{
+    font-size: 20px;
+    color: green;
+    margin: 0;
+}
+.date{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+
+}
+.info{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    content: " ";
+    display: inline-block;
+    background-image: url('../img/extref.png');
+    background-position: 0px 8px;
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: -50px;
+    
+    
+}
+a {
+    background-repeat: no-repeat;
+    
+    
+}
+
+/* a::before {
+content: url('../img/extref.png');
+width: 20px;
+height: 20px;
+background-repeat: no-repeat;
+} */
+.info:hover{
+    text-decoration: underline;
+    color:red;
+}
+.content{
+    color: blue;
+    font-style: italic;
+    font-size: 20px;
+    margin: 0px;
+}
+@media print{
+p {color: black !important;}
+a {display: none;}
+}
+
