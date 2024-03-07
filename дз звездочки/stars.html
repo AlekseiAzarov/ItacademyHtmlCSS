@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* первый вариант */
+        .stars{
+            text-align: center;
+        }
+        .stars .rating{
+            display: inline-flex;
+        }
+        .stars input{
+            position: absolute;
+            left: -9999px;
+        }
+        .stars label{
+            margin: 0;
+            cursor: pointer;
+        }
+        .stars label svg{
+            margin: 2px;
+            height: 40px;
+            width: 40px;
+            fill: #337AB7;
+            transition: fill 0.3s;
+        }
+    
+        .stars input:checked ~ label svg {
+            fill: #BFE2FF;
+                }
+        .stars .rating:hover label svg {
+            fill: #337AB7;
+                }
+        .stars .rating input:hover ~ label svg {
+            fill: #BFE2FF;
+                }
+                /* второй вариант */
+        .rating-wrapper {
+            overflow: hidden;
+            display: inline-block;
+            background-image: url('./img/star0.png');
+  
+            height: 76px;
+                        }
+        img {
+            opacity: 1;
+        }
+        .rating-input {
+            position: absolute;
+            left: 0;
+            top: -50px;
+            
+        }
+
+        .rating-star:hover, .rating-star:hover ~ .rating-star {
+            background-position: 0 0;
+        }
+
+        .rating-wrapper:hover .rating-star:hover, 
+        .rating-wrapper:hover .rating-star:hover ~
+        .rating-star, .rating-input:checked ~ 
+        .rating-star {
+            background-position: 0 0;
+        }
+
+        .rating-star, .rating-wrapper:hover .rating-star {
+            margin-right: -1px;
+            float: right;
+            display: block;
+            width: 76px;
+            height: 88px;
+            background: url('./img/star1.png') 0 -100px;
+            background-repeat: no-repeat;
+            transition: fill 0.3s;
+        }
+
+    
+
+
+/* этот пример я украл, думал сначала через него сделать, но мало что понял из-за svg */
+    </style>
+    <div class="stars">
+        <div class="rating">
+            <input name="fst" value="0" type="radio" disabled checked />
+            <label for="fst-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+            </label>
+                <input name="fst" id="fst-1" value="1" type="radio" />
+            <label for="fst-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+            </label>
+                <input name="fst" id="fst-2" value="2" type="radio" />
+            <label for="fst-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+            </label>
+                <input name="fst" id="fst-3" value="3" type="radio" />
+            <label for="fst-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+            </label>
+                <input name="fst" id="fst-4" value="4" type="radio" />
+            <label for="fst-5">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+            </label>
+                <input name="fst" id="fst-5" value="5" type="radio" />
+           
+
+
+        </div>
+    </div>
+    <!-- второй вариант, который я честно адаптировал под себя -->
+    <div class="rating-wrapper">
+        <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1"/>
+        <label for="rating-input-1-5" class="rating-star"></label>
+      
+        <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1"/>
+        <label for="rating-input-1-4" class="rating-star"></label>
+      
+        <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1"/>
+        <label for="rating-input-1-3" class="rating-star"></label>
+      
+        <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1"/>
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1"/>
+        <label for="rating-input-1-1" class="rating-star"></label>
+        
+    </div>
+
+
+
+
+
+
+
+    
+</body>
+</html>
