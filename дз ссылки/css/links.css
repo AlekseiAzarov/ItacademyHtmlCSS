@@ -1,0 +1,27 @@
+.tableV {
+    border-collapse: separate;
+    margin: 2px ;
+    border: hidden;
+    
+    
+    
+}
+
+.firstV{
+    
+    overflow: hidden;
+    padding: 5px;
+}
+.secondV{
+
+}
+a{
+    color: green;
+    border-right: solid red 2px;
+    margin: 2px;
+    text-decoration: none;
+    text-align: center;
+}
+a:hover{
+    color: red;
+}
