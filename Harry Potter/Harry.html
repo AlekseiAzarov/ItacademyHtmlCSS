@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" href="img/2favicon.png" sizes="16x16" type="image/png">
+    <link >
     <title>Harry Potter</title>
 </head>
 <body>     
@@ -27,9 +28,11 @@
         </p>
     </div>
     <hr>
-    <div class="nav">        
+    <div class="menu">  
+            
         <h2 >Книги Цикла</h2>
-            <ol style="font-family: Caveat, serif;">
+        <div class="menu2">
+            <ol style="font-family: Caveat, serif;" id="nav">
                 <li><a href="#Жизнь">Гарри Поттер и<br> Философский<br> камень</a></li>
                 <li><a href="#Это вторая книга">Гарри Поттер и<br> Тайная комната</a></li>
                 <li><a href="#Двенадцать">Гарри Поттер и<br> узник азкабана</a></li>
@@ -39,36 +42,36 @@
                 <li><a href="">Гарри Поттер и<br> дары смерти</a></li>
                 <li><a href="">Гарри Поттер и<br> проклятое дитя</a></li>  
             </ol>
-                    
+        </div>          
             <h2> Популярные<br> герои</h2>
-            
-        <div >
-           <div style="margin-bottom: -10px;">
+     
+        <div class="gallery">
+           <div >
                 
                 <img src="./img/Heroes/Lord_Voldemort.webp"width="40px" style="float: left; clear: both;">
                     <p> Том <br>Реддл</p>
                     <div style="clear: both;"></div>
             </div>
-            <div style="margin-bottom: -10px;">
+            <div >
                 
                 <img src="./img/Heroes/potter-1-photo.jpg" width="40px" style="float: left; clear: both;">
                     <p>Гарри<br> Поттер</p>
                     <div style="clear: both;"></div>
                 
             </div>
-            <div style=" margin-bottom:-23px ;">
+            <div >
                 
                 <img src="./img/Heroes/Dambldor.jpg" width="40px" style="float: left; clear: both;">
                     <p>Альбус <br>Дамблдор</p>
                     <div style="clear: both;"></div>
             </div>
-            <div  style="margin-bottom: -13px;"> 
+            <div > 
                 
                     <img src="./img/Heroes/Grin-de-Vald.webp" width="40px" style="float: left; clear: both;">
                     <p>Геллерт <br>Грин-де-Вальд</p>
                     <div style="clear: both;"></div>
             </div>
-            <div style="margin-bottom: 10px;">
+            <div >
                 
                 <img src="./img/Heroes/severus-snegg.jpg" width="40px" style="float: left; clear: both;">
                 <p>Северус<br> Снегг</p>
@@ -144,6 +147,9 @@
                         <p >2024г.</p>
                 </div>        
             </div>
+              <script src="./selectnav.js"></script>
+              <script>selectnav('nav', {label:'Книги Цикла'}); </script>
+              
               
 </body>
 </html>
