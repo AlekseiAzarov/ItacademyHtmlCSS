@@ -11,43 +11,19 @@
             display: block;
         }
         .content{
-            
-            border: solid 1px blue;
             width: 100%;
-            height: 100px;
-            margin-bottom: 10% !important;
-            display: block;
-            
-           
-            
-            
-            
-            
         }
-        .content::after{
-            content: "";
-            position: absolute;
-            bottom: -80px;
-        }
+        
         .content2{
-           margin-top: 21%;
-           position: absolute;
+           width: 100%;
+           margin-top: 7%;
         }
+        
         .gallery{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            width: 600px;
-            height: 600px;
-            border: solid 1px red;
-
-            /* border: hidden; */
-            display: block;
-            
-            margin-top: 10% !important;
-            overflow: auto;
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
         }
         .gallery img{
             max-width: 100%;
@@ -58,7 +34,7 @@
         }
         .yin{
             position: absolute;
-            bottom: 37%;
+            bottom: -16%;
             left: 33%;
            
         }
@@ -70,15 +46,16 @@
         .biohazard{
             position: absolute;
             
-            left: 16%;
+            left: 12%;
         }
         .manWoman{
             position: absolute;
             align-items: center;
-            left: 56%;
+            left: 65%;
         }
-        @media screen and (max-width: 600px) {
-            
+        .biohazard:hover, .manWoman:hover,.yin:hover{
+            z-index: 1;
+            transition-delay: 1;
         }
     </style>
     <div class="content">
