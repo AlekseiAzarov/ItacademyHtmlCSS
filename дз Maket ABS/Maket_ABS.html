@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            display: block;
+        }
+        .content{
+            
+            border: solid 1px blue;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10% !important;
+            display: block;
+            
+           
+            
+            
+            
+            
+        }
+        .content::after{
+            content: "";
+            position: absolute;
+            bottom: -80px;
+        }
+        .content2{
+           margin-top: 21%;
+           position: absolute;
+        }
+        .gallery{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 600px;
+            height: 600px;
+            border: solid 1px red;
+
+            /* border: hidden; */
+            display: block;
+            
+            margin-top: 10% !important;
+            overflow: auto;
+        }
+        .gallery img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            border: none;
+        }
+        .yin{
+            position: absolute;
+            bottom: 37%;
+            left: 33%;
+           
+        }
+        .noSmoking{
+            position: absolute;
+            top: 5%;
+            left: 30%;
+        }
+        .biohazard{
+            position: absolute;
+            
+            left: 16%;
+        }
+        .manWoman{
+            position: absolute;
+            align-items: center;
+            left: 56%;
+        }
+        @media screen and (max-width: 600px) {
+            
+        }
+    </style>
+    <div class="content">
+        <p>
+            Я к вам пишу — чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле
+            Меня презреньем наказать. Но вы, к моей несчастной доле Хоть каплю жалости храня,
+            Вы не оставите меня. Сначала я молчать хотела; Поверьте: моего стыда Вы не узнали
+            б никогда, Когда б надежду я имела Хоть редко, хоть в неделю раз В деревне нашей
+            видеть вас.
+        </p>
+
+    </div>
+    <div></div>
+    <div class="gallery">
+        <div class="yin">
+            <img src="./img/Yin_and_Yang.png">
+        </div>
+        <div class="biohazard">
+            <img src="./img/biohazard.png">
+        </div>
+        <div class="manWoman">
+            <img src="./img/Man-and-woman.png">
+        </div>
+        <div class="noSmoking">
+            <img src="./img/No_smoking.png">
+        </div>
+    </div>
+    <div class="content2">
+    <p>
+        Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об
+        одном И день и ночь до новой встречи.
+    </p>
+    </div>
+</body>
+</html>
