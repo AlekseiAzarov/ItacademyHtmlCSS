@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        fieldset{
+            width: 50%;
+        }
+       .formGroup{
+        
+
+       }
+       .formGroup input{
+        width: 74%;
+        margin-top: 5px;
+        margin-left: 50px;
+        
+        
+        
+       }
+       select{
+        margin-top: 5px;
+        margin-left: 105px;
+       }
+       .radioButton{
+        margin-right: 28%;
+        float: right;
+       }
+       
+      
+        input{
+            
+           
+            font-size: 12px;
+        }
+        @media screen and (max-width:700px) {
+            .formGroup input{
+                margin: 0px;
+                width: 100%;
+                float: left;
+            }
+            select{
+                width: 100%;
+                margin: 0px;
+                float: left;
+                font-size: 14px;
+            }
+            .radioButton{
+                margin: 0px;
+                float: left;
+            }
+            .clear{
+                clear: both;
+            }
+        }
+       
+    </style>
+    
+    <div >
+        <form>
+            <fieldset>
+                Для публикации вашей статьи заполните,пожалуйста, следующую форму:
+                <div class="formGroup">
+                    <label>Название статьи:
+                        <input type="text" name="articlename">
+                    </label>
+                </div>
+                <div class="formGroup">
+                    <label>Рубрика: 
+                        <select name="typeOfArticle" size="1">
+                            <option value="1" selected>программирование</option>
+                            <option value="2">научные доклады</option>
+                            <option value="3">что-то еще</option>
+                        </select>
+                    </label>
+                </div>
+                Публикация:
+                <div class="radioButton">
+                    <label>
+                        <div style="float: left;">
+                            <input  type="radio" name="answer" value="1">на сайте</input>
+                        </div>
+                        
+                        <div style="float: left;">
+                            <input type="radio" name="answer" value="2">в журнале</input>
+                        </div>
+                        
+                        <div style="float: left;">
+                            <input type="radio" name="answer" value="3">на сайте и в журнале</input>
+                        </div>
+                        
+                    </label>
+                </div>
+                <div style="clear: both;"></div>
+                <div >
+                    <label>Разрешить комментарии:
+                        <input type="checkbox" name="comments" checked> 
+                    </label>
+                </div>
+                <div>
+                    <label>Текст статьи:
+                        <textarea style="width: 99%;" name="articleText"></textarea><br>
+                </div>
+                        <input type="submit" name="sendArticle" value="Опубликовать">
+                    </label>
+        
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
