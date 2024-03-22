@@ -6,10 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <style>
+        .destroy{
+            opacity: 0;
+            position:absolute;
+            top: 11%;
+            left: 10%;
+            transform: rotate3d();
+        }
+        
+        .destroy:hover{
+            opacity: 1;
+            transition: 2s;
+            
+
+        }
+        .house{
+            position: relative;
+            
+        }
+    </style>
+    
+    <div class="house">
         <svg viewBox="0 0 450 550" style="width: 30%" xmlns="http://www.w3.org/2000/svg" stroke="null" style="vector-effect: non-scaling-stroke;">
             <g stroke="null">
-             <title stroke="null">Layer 1</title>
+             
              <rect stroke="#000" fill="#d8aa75" x="4.22743" y="239.11458" width="400" height="270.00001" id="svg_1"/>
              <rect stroke="#000" style="vector-effect: non-scaling-stroke;" fill="#ff0000" x="33.22743" y="338.11458" width="87.00001" height="170" id="svg_2"/>
              <ellipse stroke="#000" style="vector-effect: non-scaling-stroke;" fill="#191919" cx="47.72743" cy="430.11458" id="svg_3" rx="7.5" ry="8"/>
@@ -22,6 +43,13 @@
             </g>
            
            </svg>
-    </div>
+           <div class="destroy">
+            <img style="width: 40%;" src="./img/svg (1).svg " alt="">
+            
+           </div>
+           
+           
+        </div>
+   
 </body>
 </html>
