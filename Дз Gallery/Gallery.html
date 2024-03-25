@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        img{
+            width: 350px;
+            height: 350px;
+        }
+        .card1{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+       
+        }
+        .card1:hover{
+            
+            -webkit-animation: 'card1Anim' 3s 4;
+            border: hidden;
+            box-shadow: none;
+        }
+       
+        @-webkit-keyframes 'card1Anim'{
+            0%{clip-path: inset(0 0 0 0);}
+            
+            25% {clip-path: inset(0 0 50% 50%);}
+            50% {clip-path: inset(0 0 50% 50%);}
+            75%{clip-path: inset(50% 50% 0 0);}
+            100% {clip-path: inset(0 0 0 0);}
+           
+        }
+        .card2{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+
+        }
+        .card2:hover{
+            -webkit-animation: 'card2Anim2' 3s 4;
+            border: hidden;
+            box-shadow: none;
+        }
+        @-webkit-keyframes 'card2Anim2'{
+            0%{clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
+            33%{clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0% 100%);}
+            66%{clip-path: polygon(0 30%, 100% 30%, 100% 100%, 0% 100%);}
+            100%{clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
+
+        }
+        .card3{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+
+        }
+        .card3:hover{
+            -webkit-animation: 'card3Anim3' 3s 4;
+            border: hidden;
+            box-shadow: none;
+        }
+        @-webkit-keyframes 'card3Anim3'{
+            0%{clip-path: circle(71.2% at 50% 49%);}
+            40%{clip-path: circle(30.9% at 25% 29%);}
+            60%{clip-path: circle(52.4% at 46% 48%);}
+            100%{clip-path: circle(71.2% at 50% 49%);}
+
+        }
+        .card4{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+
+        }
+        .card4:hover{
+            transform: perspective(650px) rotate3d(10, 0, 10, 30deg);
+            transition: 1s cubic-bezier(.0,.0,.0,.10);
+            
+            
+        }
+        .card5{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+
+        }
+        .card5:hover{
+            transform: rotate(-360deg);
+            transition: 1s ease-in;
+        }
+        .card6{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+
+        }
+        .card6:hover{
+               
+            transform:perspective(650px)  rotateY(180deg);
+            
+            transition: 2s ease-in-out;
+        }
+        .card7{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+
+        }
+        .card7:hover{
+            -webkit-animation: 'card7Anim7' 2s infinite;
+            transform: translateY(50px);
+            transition: 2s ;
+            animation-direction:alternate-reverse ;
+            border: hidden;
+            box-shadow: none;
+        }
+        @keyframes card7Anim7 {
+            0%{transform: translateY(60px);}
+            100%{transform: translateY(0px);}
+
+            
+        }
+        .card8{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+            
+        }
+        .card8:hover{
+            -webkit-animation: 'card8Anim8' 3s 4;
+            border: hidden;
+            box-shadow: none;
+        }
+        @keyframes card8Anim8 {
+            0%{transform: translateX(0px);}
+            25%{transform: translateY(-200px);}
+            50%{transform: translateX(200px);}
+            100%{animation-direction:reverse ;}
+        }
+        .card9{
+            border: 1px solid gainsboro;
+            padding: 20px;
+            display: inline-block;
+            box-shadow: 0 0 10px gainsboro;
+            margin: 33px;
+            
+
+        }
+        .card9:hover{
+            -webkit-animation: 'card9Anim9' 4s infinite;
+            border: hidden;
+            box-shadow: none;
+        }
+        
+
+        @keyframes card9Anim9 {
+            0%{transform: rotatey(0deg);
+                transform-origin:left;}
+            50% {transform: rotatey(180deg);}
+            100%{transform: rotatey(180deg);
+                }
+                
+        
+        }
+       
+    </style>
+<div >
+    <div class="card1">
+        <img src="./img/1.jpg" alt="">
+    </div>
+    <div class="card2">
+        <img src="./img/2.jpg" alt="">
+    </div>
+    <div class="card3">
+        <img src="./img/5.jpg" alt="">
+    </div>
+    <div class="card4">
+        <img src="./img/3.jpg">
+    </div>
+    <div class="card5">
+        <img src="./img/4.jpg">
+    </div>
+    <div class="card6">
+        <img style="filter: grayscale(100%);" src="./img/simferopol-1.jpg">
+    </div>
+    <div class="card7">
+        <img style="filter: grayscale(100%);" src="./img/simferopol-2.jpg">
+    </div>
+    <div class="card8">
+        <img style="filter: grayscale(100%);" src="./img/simferopol-3.jpg">
+    </div>
+    <div class="card9">
+        <img style="filter: grayscale(100%);" src="./img/simferopol-4.jpg">
+    </div>
+</div>
+</body>
+</html>
