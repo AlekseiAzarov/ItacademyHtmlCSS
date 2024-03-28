@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+.container{
+    display: flex;
+}
+.header{
+    font-family: 'Lobster', serif ;
+    font-size: 20px;
+    background-image: none !important;
+    text-align: center;
+    img{ width: 180px;}
+    }
+.header__content{
+    font-family: 'Amatic SC', serif;
+    font-size: 24px;
+    word-spacing: 3px;
+    span{
+        font-weight: bold;
+        font-size: 28px;
+        }
+    span:first-child{text-decoration: underline}
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        ol{font-family: 'Caveat', serif;}
+        h2{text-align: center;}
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        img{width: 50px;
+            
+        margin-bottom: 5px
+    }
+}
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-right: 3%;
+        margin-left: 5%;
+        flex-grow: 2;
+        color: black;
+        span{color: red;}
+        font-family: 'Caveat', serif;
+        font-size: 20px;
+    }
+    .content img{
+        width: 160px; padding: 4px;
+    }
+    .book1{
+        display: flex;
+        background-color: #f5f5dc;
+        margin-bottom: 15px;
+    }
+    .book2{
+        display: flex;
+        background-color: rgb(230, 194, 200);
+        margin-bottom: 15px;
+    }
+    .book3{
+        display: flex;
+        background-color: lightgray;
+        margin-bottom: 5px;
+    }   
+    .link{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: 'Caveat', serif;
+        font-size: 20px;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Caveat', serif
+    }
+    @media screen and (max-width : 600px) {
+        body {overflow-x: block;}
+        .container{display: flex;
+        flex-direction: column-reverse;
+        h2{text-align: center;}
+        }
+        .content {display: flex; 
+            order: 1 !important; 
+            margin-left: 0px;
+            width: 100%;
+            word-spacing: 0px; 
+            font-size: 16px; 
+            img{width: 100px;}
+            
+        
+        
+        }
+        .content img{
+            width: 100px !important;
+            height: 220px;
+        }
+        .header img  {  width: 100px; height: 60px;
+                 }
+        .header h1 { font-size: 22px;}  
+        .header__content { font-size: 18px; word-spacing: 2px;}      
+        .header__content span{ font-size: 18px; word-spacing: 2px;}
+        .menu{display:flex; 
+            order: 2; 
+            width: 100%;
+            margin-left: -15px;
+        }
+        .menu ol{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: baseline
+        }
+        .gallery{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            order: 3;
+            justify-content: center;
+            
+        }
+        .gallery img { width: 40px;margin-left: 5px;}
+        .link{ width: 100%; }
+        .foot{ justify-content: center; }
+        .foot{justify-content: center;}
+    
+    }
