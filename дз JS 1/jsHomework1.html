@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // первое задание
+        // let num1 = prompt('ввести первое число');
+        // let num2 = prompt('ввести второе число');
+        // let num3 = prompt('ввести третье число');
+        // console.log( 2 *(num1 + num3) - (num1 - num3) , num2 * 3)
+        // второе задание (мне стало лень переключаться на русс раскладку, извините)
+        // let userNumber1 = prompt('Please, enter the first number');
+        // let userNumber2 = prompt('Please, enter the second number');
+        // if ((userNumber1 && userNumber2) % 2 === 0){
+        //     console.log('The both of the numbers are even, thank you');
+
+        // } else {
+        //     console.log('Sorry, but one of the numbers is odd');
+        // }
+        // второй вариант, но не придумал как ее вывести в консоль правильно
+        // let usersArray = [
+        //     prompt('1st num'),
+        //     prompt('2nd num')
+        // ];
+
+        // function oddOrEven(usersArray){
+        //     usersArray.reduce((a,b) => a+b,0) % 2;
+        // }
+        // console.log(usersArray)
+        // let evenOrOdd = (usersArray) => {
+        // usersArray % 2 === 0 ? console.log(true) : console.log(false);
+        // }
+        //  3е задание
+        // let firstNum = prompt('enter the first number');
+        // let secondNum = prompt('enter the second number');
+        // if ((firstNum && secondNum) % 2 === 0){
+        //     console.log(firstNum*1 + secondNum*1);
+        // } else if (!(firstNum && secondNum) % 2 === 0){
+        //     console.log(firstNum * secondNum)
+        // } else {
+        // }
+        // 4e задание 
+        let userName =  prompt('введите ваше имя');
+        let userSurname = prompt('введите вашу фамилию');
+        let fathersName = prompt('введите ваше отчество');
+        let usersAge = prompt('введите ваш возраст');
+        let userSex = confirm('ваш пол - мужской?');
+        let form = {
+            "Имя: " : `${userName}`,
+            "Фамилия: " : `${userSurname}`,
+            "Отчество: " : `${fathersName}`,
+            "Возраст: " : `${usersAge}`,
+            "Пол - мужской?: " : `${userSex}`,
+
+        }
+        alert(Object.entries(form).join('\n'));
+        // как убрать запятые из алерта я не знаю
+            
+        
+        
+
+    </script>
+</body>
+</html>
