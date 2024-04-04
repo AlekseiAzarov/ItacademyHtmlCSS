@@ -35,25 +35,37 @@
         //     console.log(secondNum)
         // }
         // 4e задание 
-        let userName =  prompt('введите ваше имя');
+        let userName = prompt('введите ваше имя');
         let userSurname = prompt('введите вашу фамилию');
         let fathersName = prompt('введите ваше отчество');
         let usersAge = prompt('введите ваш возраст');
         let userSex = confirm('ваш пол - мужской?');
-        let form = {
-            "Имя: " : `${userName}`,
-            "Фамилия: " : `${userSurname}`,
-            "Отчество: " : `${fathersName}`,
-            "Возраст в годах: " : `${usersAge}`,
-            "Возраст в днях": `${usersAge}` * 365,
-            "через 5 лет вам будет": `${usersAge}`*1 + 5,
-            "Пол - мужской?: " : `${userSex}`,
-            "вы на пенсии? " : (usersAge > 65) ? "да" : "нет",
+        let userSexConfirm = (userSex === true) ? "да" : "нет";
+        let usersAgeQuestion = (usersAge > 65) ? "да" : "нет"
+            alert(`Имя : ` +`${userName}` + '\n' +
+            `Фамилия : ` + `${userSurname}`+ '\n' +
+            `Отчество : ` + `${fathersName}`+ '\n' +
+            `Возраст в годах : ` + `${usersAge}`+ '\n' +
+            `Возраст в днях : ` + `${usersAge * 365}`+ '\n' +
+            `через 5 лет вам будет : `+  `${usersAge*1 + 5}`+ '\n' +
+            `Пол - мужской? : ` +  `${userSexConfirm}`+ '\n' +
+            `вы на пенсии? : `  + `${usersAgeQuestion}`)
+        
+        // let form = {
+        //     "Имя: " : `${userName}`,
+        //     "Фамилия: " : `${userSurname}`,
+        //     "Отчество: " : `${fathersName}`,
+        //     "Возраст в годах: " : `${usersAge}`,
+        //     "Возраст в днях": `${usersAge}` * 365,
+        //     "через 5 лет вам будет": `${usersAge}`*1 + 5,
+        //     "Пол - мужской?: " : (userSex === true) ? "да" : "нет",
+        //     "вы на пенсии? " : (usersAge > 65) ? "да" : "нет",
 
 
-        }
-        alert(Object.entries(form).join('\n'));
-        // как убрать запятые из алерта я не знаю
+        // } 
+        
+       
+       
             
         
         
