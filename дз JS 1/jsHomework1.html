@@ -11,37 +11,28 @@
         // let num1 = prompt('ввести первое число');
         // let num2 = prompt('ввести второе число');
         // let num3 = prompt('ввести третье число');
-        // console.log( 2 *(num1 + num3) - (num1 - num3) , num2 * 3)
+        // console.log( 2 *(num1 + num3) - 2 * (num1 + num3) - num2 * 3)
         // второе задание (мне стало лень переключаться на русс раскладку, извините)
         // let userNumber1 = prompt('Please, enter the first number');
         // let userNumber2 = prompt('Please, enter the second number');
-        // if ((userNumber1 && userNumber2) % 2 === 0){
+        // if (userNumber1 % 2 === 0 && userNumber2 % 2 === 0){
         //     console.log('The both of the numbers are even, thank you');
 
         // } else {
         //     console.log('Sorry, but one of the numbers is odd');
         // }
-        // второй вариант, но не придумал как ее вывести в консоль правильно
-        // let usersArray = [
-        //     prompt('1st num'),
-        //     prompt('2nd num')
-        // ];
-
-        // function oddOrEven(usersArray){
-        //     usersArray.reduce((a,b) => a+b,0) % 2;
-        // }
-        // console.log(usersArray)
-        // let evenOrOdd = (usersArray) => {
-        // usersArray % 2 === 0 ? console.log(true) : console.log(false);
-        // }
+        
         //  3е задание
         // let firstNum = prompt('enter the first number');
         // let secondNum = prompt('enter the second number');
-        // if ((firstNum && secondNum) % 2 === 0){
+        // if (firstNum % 2 === 0 && secondNum % 2 === 0){
         //     console.log(firstNum*1 + secondNum*1);
-        // } else if (!(firstNum && secondNum) % 2 === 0){
+        // } else if (firstNum % 2 !== 0 && secondNum % 2 !== 0){
         //     console.log(firstNum * secondNum)
-        // } else {
+        // } else if(firstNum % 2 !== 0 && secondNum % 2 === 0){
+        //     console.log(firstNum)
+        // }else {(firstNum % 2 === 0 && secondNum % 2 !== 0)
+        //     console.log(secondNum)
         // }
         // 4e задание 
         let userName =  prompt('введите ваше имя');
@@ -53,8 +44,12 @@
             "Имя: " : `${userName}`,
             "Фамилия: " : `${userSurname}`,
             "Отчество: " : `${fathersName}`,
-            "Возраст: " : `${usersAge}`,
+            "Возраст в годах: " : `${usersAge}`,
+            "Возраст в днях": `${usersAge}` * 365,
+            "через 5 лет вам будет": `${usersAge}`*1 + 5,
             "Пол - мужской?: " : `${userSex}`,
+            "вы на пенсии? " : (usersAge > 65) ? "да" : "нет",
+
 
         }
         alert(Object.entries(form).join('\n'));
