@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        do {
+            var bookGenre = prompt('Какой жанр книги предпочитаете(от 1 до 3)?');
+            }while (isNaN(bookGenre))
+        let modernLit = confirm('Предпочитаете современную литературу?');
+        let russAutor = confirm('Предпочитаете русского автора?');
+
+        if (bookGenre == 1 && modernLit === false && russAutor === true){
+            console.log('Предлагаем вам почитать - “Война и мир”')
+        }
+        else if (bookGenre == 2 && modernLit === true && russAutor === false){
+            console.log('Предлагаем вам почитать - “Девушка в поезде”')
+        }
+        else if (bookGenre == 2 && modernLit === false && russAutor === false){
+            console.log('Предлагаем вам почитать - “Шерлок Холмс”')
+        }
+        else if (bookGenre == 3 && modernLit === true && russAutor === true){
+            console.log('Предлагаем вам почитать - “Ночной Дозор”')
+        }
+        else if (bookGenre == 3 && modernLit === true && russAutor === false){
+            console.log('Предлагаем вам почитать - “Гарри Поттер”')
+        }else{
+            console.log('К сожалению, не смогли подобрать вам книгу')
+        }
+       
+
+
+    </script>
+</body>
+</html>
